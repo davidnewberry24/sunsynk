@@ -160,20 +160,20 @@ SENSORS += (  # Deye 3 Phase  only has 2 MPPT)
 ###################
 SENSORS += (
     Sensor(502, "Day Active Energy", KWH, -0.1),
-    Sensor(514, "Day Battery Charge", KWH, 0.1),
-    Sensor(515, "Day Battery discharge", KWH, 0.1),
+    Sensor(514, "Day Battery Charge", KWH, 1),
+    Sensor(515, "Day Battery discharge", KWH, 1),
     Sensor(521, "Day Grid Export", KWH, 0.1),
     Sensor(520, "Day Grid Import", KWH, 0.1),
     Sensor(536, "Day Gen Energy", KWH, 0.1),
-    Sensor(526, "Day Load Energy", KWH, 0.1),  # I guess "used" = load?
-    Sensor(529, "Day PV Energy", KWH, 0.1),
+    Sensor(526, "Day Load Energy", KWH, 1),  # I guess "used" = load?
+    Sensor(529, "Day PV Energy", KWH, 1),
     Sensor((506, 507), "Total Active Energy", KWH, 0.1),  # signed?
-    Sensor((516, 517), "Total Battery Charge", KWH, 0.1),
-    Sensor((518, 519), "Total Battery Discharge", KWH, 0.1),
+    Sensor((516, 517), "Total Battery Charge", KWH, 1),
+    Sensor((518, 519), "Total Battery Discharge", KWH, 1),
     Sensor((524, 525), "Total Grid Export", KWH, 0.1),
     Sensor((522, 523), "Total Grid Import", KWH, 0.1),
-    Sensor((527, 528), "Total Load Energy", KWH, 0.1),
-    Sensor((534, 535), "Total PV Energy", KWH, 0.1),
+    Sensor((527, 528), "Total Load Energy", KWH, 1),
+    Sensor((534, 535), "Total PV Energy", KWH, 1),
 )
 
 ##########
